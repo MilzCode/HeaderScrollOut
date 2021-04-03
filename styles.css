@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.logo {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  padding-left: 100px;
+  box-sizing: border-box; /*Permite que el tamaño del elemento este en base unicamente al width y height*/
+  transition: 1s; /*?*/
+}
+.navbarOff{
+    transform: translateY(-100%);
+}
+.navbarOn{
+    transform: translateY(0%);
+}
+
+.navInvisible{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.navbar ul {
+  /* al poner mas elementos accedes cada vez mas especifico*/
+  margin: 0;
+  padding: 0;
+  display: flex; /*para mostrarlo en row */
+  float: right; /*el float se salta el flujo y pone el elemento a la derecha en este caso tambien podrias hacerlo con flex*/
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 10px;
+}
+.navbar ul li {
+  list-style: none; /*quita estilo a la lista*/
+  line-height: 80px; /*espaciado entre lineas para crear distancia con el techo del nav*/
+}
+
+.navbar ul li a {
+  padding: 0px 30px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  display: block; /*lo utilizo para que al hacer hover ocupe todo el alto (todo el espacio)*/
+}
+
+.navbar ul li a:hover, .actual /*la , ( "," )  equivale como a un and (y) tambien aplicara este efecto en este caso a .actual*/ {
+  background: red;
+}
+
+.actual:nth-child(1) {
+  border-bottom-left-radius: 10px;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+}
+
+.sec1 {
+  background: url(https://picsum.photos/1080/720);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box; /*Permite que el tamaño del elemento este en base unicamente al width y height*/
+    background-color: blue;
+    border: 1px;
+    border-radius: 20px;
+    border-color: darkblue;
+    border-style: solid;
+    
+    
+}
+.box:hover{
+    background-color: #6262ff;
+    border-color: #0000ee;
+    cursor: pointer;
+    transition: background-color 3s;
+}
+
+.sec2 {
+  padding: 100px;
+  height: auto;
+  width: auto;
+  
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(227, 176, 230, 1) 0%,
+    rgba(0, 212, 255, 1) 94%
+  );
+}
+.sec2 h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 60px;
+  font-weight: bold;
+  
+}
+
+.sec2 p {
+    padding-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+.sec3 {
+  background: url(https://picsum.photos/1080/721);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
