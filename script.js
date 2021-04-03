@@ -29,6 +29,9 @@ window.onscroll = function () {
     navBarInvisible.classList.replace("navbarOn", "navbarOff");
   }
   navBar.addEventListener("mouseleave", () => {
+    if( oldScroll < 400){
+      return;
+    }
     if (y > 450) {
       navBar.classList.replace("navbarOn", "navbarOff");
       navBarInvisible.classList.replace("navbarOff", "navbarOn");
