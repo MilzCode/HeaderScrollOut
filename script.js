@@ -13,6 +13,10 @@ const funcion = () => {
 boton.addEventListener("mousedown", funcion);
 boton.addEventListener("mouseup", () => {
   boton.classList.remove("boxPush");
+  seccion[0].classList.toggle("fondo1");
+  seccion[0].classList.toggle("fondo2");
+  seccion[2].classList.toggle("fondo3");
+  seccion[2].classList.toggle("fondo4");
 });
 boton.addEventListener("mouseleave", () => {
   boton.classList.remove("boxPush");
