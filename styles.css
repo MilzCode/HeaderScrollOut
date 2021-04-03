@@ -89,14 +89,18 @@ section {
     border-radius: 20px;
     border-color: darkblue;
     border-style: solid;
-    
+    transform: scale(1);
     
 }
 .box:hover{
     background-color: #6262ff;
     border-color: #0000ee;
-    cursor: pointer;
-    transition: background-color 3s;
+    cursor: pointer;    
+
+}
+
+.boxPush{
+  transform: scale(.97); 
 }
 
 .sec2 {

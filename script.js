@@ -6,10 +6,15 @@ const navBarInvisible = document.querySelector(".navInvisible");
 let oldScroll = 0;
 
 const funcion = () => {
-  console.log("wena!");
+  boton.classList.add("boxPush");
 };
-boton.addEventListener("click", funcion);
-
+boton.addEventListener("mousedown", funcion);
+boton.addEventListener("mouseup", () => {
+  boton.classList.remove("boxPush");
+});
+boton.addEventListener("mouseleave", () => {
+  boton.classList.remove("boxPush");
+});
 navBarInvisible.addEventListener("mouseenter", () => {
   console.log("wena!");
 });
@@ -29,7 +34,7 @@ window.onscroll = function () {
     navBarInvisible.classList.replace("navbarOn", "navbarOff");
   }
   navBar.addEventListener("mouseleave", () => {
-    if( oldScroll < 400){
+    if (oldScroll < 400) {
       return;
     }
     if (y > 450) {
