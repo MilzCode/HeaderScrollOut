@@ -82,6 +82,31 @@ section {
   align-items: center;
 }
 
+.fondo1{
+  background: url(https://picsum.photos/1080/720);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.fondo2{
+  background: url(https://picsum.photos/1080/721);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.fondo3{
+  background: url(https://picsum.photos/1081/720);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.fondo4{
+  background: url(https://picsum.photos/1082/721);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .box{
     width: 100px;
     height: 100px;
@@ -133,9 +158,5 @@ section {
   text-align: center;
 }
 .sec3 {
-  background: url(https://picsum.photos/1080/721);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 

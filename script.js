@@ -1,6 +1,8 @@
 const boton = document.querySelector(".box");
 const navBar = document.querySelector(".navbar");
 const navBarInvisible = document.querySelector(".navInvisible");
+const seccion = document.querySelectorAll(".sec");
+
 //const boton = document.getElementById("box");
 
 let oldScroll = 0;
@@ -42,6 +44,15 @@ window.onscroll = function () {
       navBarInvisible.classList.replace("navbarOff", "navbarOn");
     }
   });
+
+  //cambiar fondo segun scroll
+  if (y > 799) {
+    seccion[0].classList.toggle("fondo1");
+    seccion[0].classList.toggle("fondo2");
+  } else if (y < 640) {
+    seccion[2].classList.toggle("fondo3");
+    seccion[2].classList.toggle("fondo4");
+  }
   oldScroll = y;
 };
 
